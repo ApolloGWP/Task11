@@ -1,0 +1,6 @@
+all: compile run
+
+compile: main.c
+	gcc signalaction.c -lm -o sig1 -lpthread 
+run: main.out
+	./sig1
